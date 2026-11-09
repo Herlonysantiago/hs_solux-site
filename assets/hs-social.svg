@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07182d"/>
+      <stop offset="1" stop-color="#123e69"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2587d8"/>
+      <stop offset="1" stop-color="#102b4e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="50" r="320" fill="none" stroke="#8ecbfb" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="1040" cy="50" r="235" fill="none" stroke="#8ecbfb" stroke-opacity=".14" stroke-width="2"/>
+  <path d="M0 540 C280 440 410 650 720 515 S1030 460 1200 530 V630 H0Z" fill="#2587d8" fill-opacity=".07"/>
+  <g transform="translate(94 90)">
+    <rect width="112" height="112" rx="24" fill="url(#mark)"/>
+    <path d="M19 31h12v20h21V31h12v50H52V61H31v20H19z" fill="#fff"/>
+    <path d="M82 31c-11 0-17 5-17 14 0 8 5 12 16 14 6 2 8 3 8 6s-3 4-7 4c-5 0-10-2-14-5l-6 8c5 5 12 8 20 8 12 0 19-6 19-15 0-8-5-12-16-14-6-2-8-3-8-5 0-3 2-4 6-4 5 0 9 2 12 5l6-8c-4-5-11-8-19-8z" fill="#fff" opacity=".94"/>
+  </g>
+  <text x="234" y="160" fill="#fff" font-family="Arial, sans-serif" font-size="38" font-weight="700">HS <tspan fill="#78bff3">Solux</tspan></text>
+  <text x="94" y="315" fill="#fff" font-family="Arial, sans-serif" font-size="66" font-weight="700">Tecnologia que</text>
+  <text x="94" y="390" fill="#78bff3" font-family="Arial, sans-serif" font-size="66" font-weight="700">simplifica.</text>
+  <text x="98" y="468" fill="#cbd9e6" font-family="Arial, sans-serif" font-size="26">Ideias complexas. Soluções claras, úteis e preparadas para evoluir.</text>
+  <text x="98" y="552" fill="#8ecbfb" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">HSSOLUX.COM.BR</text>
+</svg>
