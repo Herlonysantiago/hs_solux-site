@@ -1,0 +1,691 @@
+
+/* ==========================================
+   HS SOLUX - PÁGINAS DOS APLICATIVOS
+   Arquivo: aplicativos/app.css
+   ========================================== */
+
+/* AJUSTES GERAIS */
+
+.app-hero,
+.app-about,
+.app-features-section,
+.app-steps-section,
+.app-audiences-section,
+.app-final-cta {
+  overflow: hidden;
+}
+
+.app-hero h1,
+.app-hero h2,
+.app-section-heading h2,
+.app-final-cta h2 {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.app-hero h1,
+.app-hero h2,
+.app-section-heading h2 {
+  color: var(--navy-900);
+}
+
+.app-hero em,
+.app-about em {
+  color: var(--blue-600);
+  font-style: normal;
+}
+
+/* ==========================================
+   HERO DO APLICATIVO
+   ========================================== */
+
+.app-hero {
+  position: relative;
+  padding: 70px 0 100px;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(37, 135, 216, .13),
+      transparent 35%
+    ),
+    linear-gradient(
+      120deg,
+      #ffffff 45%,
+      #f1f7fd 100%
+    );
+}
+
+.app-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: 65px;
+}
+
+.app-hero-content {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+}
+
+.app-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 45px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  transition: color .2s ease;
+}
+
+.app-back-link:hover {
+  color: var(--blue-600);
+}
+
+.app-hero h1 {
+  margin: 20px 0 10px;
+  font-size: clamp(45px, 5vw, 65px);
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+}
+
+.app-hero h2 {
+  max-width: 650px;
+  margin: 0 0 24px;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+}
+
+.app-hero-description {
+  max-width: 610px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/* STATUS */
+
+.app-status-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 27px;
+}
+
+.app-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.app-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.app-status.available {
+  background: #e7f7ee;
+  color: #147c49;
+}
+
+.app-status.development {
+  background: #fff3dc;
+  color: #946000;
+}
+
+.app-status.planning {
+  background: #eaf0f7;
+  color: #526781;
+}
+
+.app-platform {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* BOTÕES */
+
+.app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.app-access-note {
+  max-width: 540px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   ILUSTRAÇÃO DO HS AGENDA
+   ========================================== */
+
+.app-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 440px;
+}
+
+.app-preview {
+  position: relative;
+  width: 100%;
+  max-width: 410px;
+  padding: 35px;
+  border: 1px solid #d8e6f2;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 30px 75px rgba(11, 35, 65, .14);
+  text-align: center;
+}
+
+.app-preview::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -22px;
+  border: 1px solid rgba(20, 117, 198, .13);
+  border-radius: 36px;
+}
+
+.app-preview-icon {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    var(--navy-900),
+    var(--navy-800)
+  );
+  color: #8ecbfb;
+  font-size: 40px;
+}
+
+.app-preview > strong {
+  display: block;
+  color: var(--navy-900);
+  font: 800 25px "Manrope", Arial, sans-serif;
+}
+
+.app-preview > span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* CALENDÁRIO ILUSTRATIVO */
+
+.app-preview-calendar {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  text-align: left;
+}
+
+.preview-calendar-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: var(--navy-900);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.preview-calendar-title span:last-child {
+  color: var(--blue-600);
+}
+
+.preview-calendar-days {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.preview-calendar-days span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.preview-calendar-slots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.preview-calendar-slots span {
+  padding: 11px 8px;
+  border: 1px solid #c7dff2;
+  border-radius: 8px;
+  background: #eaf5fd;
+  color: var(--blue-600);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ==========================================
+   SEÇÃO SOBRE O APLICATIVO
+   ========================================== */
+
+.app-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.app-about h2 {
+  margin: 18px 0 0;
+  font-size: clamp(32px, 3.5vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -1.8px;
+}
+
+.app-intro-text p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   FUNCIONALIDADES
+   ========================================== */
+
+.app-features-section {
+  background: var(--surface);
+}
+
+.app-section-heading {
+  max-width: 750px;
+  margin-bottom: 45px;
+}
+
+.app-section-heading h2 {
+  margin: 16px 0 18px;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1.8px;
+}
+
+.app-section-heading > p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.app-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.app-feature-card {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #ffffff;
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.app-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #accde8;
+  box-shadow: var(--shadow);
+}
+
+.app-feature-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  background: var(--blue-100);
+  color: var(--blue-600);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.app-feature-card h3 {
+  margin: 0 0 12px;
+  color: var(--navy-900);
+  font: 700 19px "Manrope", Arial, sans-serif;
+  letter-spacing: -.4px;
+}
+
+.app-feature-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   COMO FUNCIONA
+   ========================================== */
+
+.app-steps-section {
+  background: var(--navy-900);
+  color: #ffffff;
+}
+
+.app-steps-section .app-section-heading h2 {
+  color: #ffffff;
+}
+
+.app-steps-section .app-section-heading > p:not(.eyebrow) {
+  color: #cbd9e6;
+}
+
+.app-steps-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, .13);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.app-step-number {
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(142, 203, 251, .35);
+  border-radius: 12px;
+  color: #8ecbfb;
+  font: 700 12px "Manrope", Arial, sans-serif;
+}
+
+.app-steps-list h3 {
+  margin: 0 0 9px;
+  color: #ffffff;
+  font: 700 17px "Manrope", Arial, sans-serif;
+}
+
+.app-steps-list p {
+  margin: 0;
+  color: #c3d2e0;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* ==========================================
+   PROPRIETÁRIOS E CLIENTES
+   ========================================== */
+
+.app-audiences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.app-audience-card {
+  padding: 35px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.app-audience-card:first-child {
+  border-color: #c6dff2;
+  background: var(--blue-50);
+}
+
+.app-audience-card h3 {
+  margin: 0 0 15px;
+  color: var(--navy-900);
+  font: 800 22px "Manrope", Arial, sans-serif;
+  letter-spacing: -.6px;
+}
+
+.app-audience-card p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.app-audience-card ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.app-audience-card li::marker {
+  color: var(--blue-600);
+}
+
+/* ==========================================
+   CHAMADA FINAL
+   ========================================== */
+
+.app-final-cta {
+  padding: 75px 0;
+  background: linear-gradient(
+    120deg,
+    #0d2a4c,
+    #123e69
+  );
+}
+
+.app-final-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.app-final-cta h2 {
+  margin: 16px 0 12px;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -1.7px;
+}
+
+.app-final-cta p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 0;
+  color: #cfdeea;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.app-final-cta .button {
+  flex: 0 0 auto;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+@media (max-width: 1000px) {
+  .app-hero-grid {
+    gap: 35px;
+  }
+
+  .app-hero h1 {
+    font-size: 52px;
+  }
+
+  .app-hero h2 {
+    font-size: 30px;
+  }
+
+  .app-preview {
+    padding: 25px;
+  }
+
+  .app-intro-grid {
+    gap: 45px;
+  }
+
+  .app-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .app-hero {
+    padding: 40px 0 70px;
+  }
+
+  .app-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .app-back-link {
+    margin-bottom: 35px;
+  }
+
+  .app-hero h1 {
+    font-size: 46px;
+    letter-spacing: -2px;
+  }
+
+  .app-hero h2 {
+    font-size: 29px;
+  }
+
+  .app-hero-description {
+    font-size: 15px;
+  }
+
+  .app-hero-visual {
+    min-height: 350px;
+  }
+
+  .app-preview {
+    max-width: 390px;
+  }
+
+  .app-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .app-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-feature-card {
+    padding: 25px;
+  }
+
+  .app-steps-list {
+    grid-template-columns: 1fr;
+  }
+
+  .app-audiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-audience-card {
+    padding: 28px;
+  }
+
+  .app-final-cta {
+    padding: 65px 0;
+  }
+
+  .app-final-cta-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .app-final-cta .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .app-hero h1 {
+    font-size: 40px;
+  }
+
+  .app-hero h2 {
+    font-size: 26px;
+  }
+
+  .app-preview {
+    padding: 20px;
+  }
+
+  .app-preview-calendar {
+    padding: 15px;
+  }
+
+  .app-feature-card,
+  .app-audience-card {
+    padding: 22px;
+  }
+
+  .app-steps-list li {
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .app-step-number {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-feature-card,
+  .app-back-link {
+    transition: none;
+  }
+
+  .app-feature-card:hover {
+    transform: none;
+  }
+}
