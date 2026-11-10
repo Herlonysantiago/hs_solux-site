@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>HS Agenda | Agendamento Online | HS Solux</title>
-  <meta name="description" content="Conheça o HS Agenda, sistema de agendamento online para pequenos negócios e prestadores de serviços. Organize horários, clientes, serviços e pacotes.">
+  <meta name="description" content="Conheça o HS Agenda, uma solução de agendamento online para profissionais e pequenos negócios.">
   <meta name="theme-color" content="#0b2341">
-  <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://hssolux.com.br/aplicativos/hs-agenda/">
   <link rel="icon" href="../../assets/hs-mark.svg" type="image/svg+xml">
@@ -19,12 +18,80 @@
 
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="../app.css">
+
+  <style>
+    /* Ajustes específicos da página compacta */
+    .app-hero {
+      padding-top: 45px;
+      padding-bottom: 65px;
+    }
+
+    .app-back-link {
+      margin-bottom: 28px;
+    }
+
+    .app-hero-visual {
+      min-height: 340px;
+    }
+
+    .app-preview {
+      max-width: 370px;
+    }
+
+    .app-section-heading {
+      margin-bottom: 30px;
+    }
+
+    .app-features-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .app-feature-card {
+      padding: 26px;
+    }
+
+    .app-feature-icon {
+      margin-bottom: 17px;
+    }
+
+    .app-steps-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .app-steps-list li {
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .app-final-cta {
+      padding: 55px 0;
+    }
+
+    @media (max-width: 760px) {
+      .app-hero {
+        padding: 30px 0 55px;
+      }
+
+      .app-hero-visual {
+        min-height: auto;
+      }
+
+      .app-features-grid,
+      .app-steps-list {
+        grid-template-columns: 1fr;
+      }
+
+      .app-steps-list li {
+        flex-direction: row;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- CABEÇALHO HS SOLUX -->
+  <!-- CABEÇALHO -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="../../#inicio" aria-label="HS Solux — página inicial">
@@ -53,13 +120,13 @@
 
   <main id="conteudo">
 
-    <!-- APRESENTAÇÃO -->
+    <!-- 1. APRESENTAÇÃO -->
     <section class="app-hero" aria-labelledby="app-title">
       <div class="container app-hero-grid">
-
         <div class="app-hero-content">
           <a class="app-back-link" href="../../#solucoes">
-            <span aria-hidden="true">←</span> Voltar aos aplicativos
+            <span aria-hidden="true">←</span>
+            Voltar aos aplicativos
           </a>
 
           <p class="eyebrow">
@@ -67,19 +134,17 @@
             Agendamento online
           </p>
 
-          <h1 id="app-title">
-            HS Agenda
-          </h1>
+          <h1 id="app-title">HS Agenda</h1>
 
           <h2>
-            Seu negócio organizado.
-            <em>Seus clientes agendando com facilidade.</em>
+            Sua agenda organizada.
+            <em>Seu atendimento simplificado.</em>
           </h2>
 
           <p class="app-hero-description">
-            Gerencie serviços, profissionais, horários e pacotes em um só
-            sistema. Compartilhe o link exclusivo do seu negócio e permita
-            que seus clientes agendem atendimentos pela internet.
+            Gerencie horários, serviços e clientes em um só lugar.
+            Compartilhe o link do seu negócio e facilite os
+            agendamentos online.
           </p>
 
           <div class="app-status-row">
@@ -98,9 +163,8 @@
           </div>
 
           <p class="app-access-note">
-            Acesso destinado a proprietários e profissionais.
-            Os clientes realizam seus agendamentos pelo link
-            compartilhado pelo estabelecimento.
+            Os clientes agendam pelo link compartilhado
+            pelo estabelecimento.
           </p>
         </div>
 
@@ -108,13 +172,14 @@
           <div class="app-preview">
             <div class="app-preview-icon">▦</div>
             <strong>HS Agenda</strong>
-            <span>Agendamento e gestão de serviços</span>
+            <span>Organize seus atendimentos</span>
 
             <div class="app-preview-calendar">
               <div class="preview-calendar-title">
                 <span>Agenda</span>
-                <span>Horários</span>
+                <span>Horários disponíveis</span>
               </div>
+
               <div class="preview-calendar-days">
                 <span>SEG</span>
                 <span>TER</span>
@@ -122,6 +187,7 @@
                 <span>QUI</span>
                 <span>SEX</span>
               </div>
+
               <div class="preview-calendar-slots">
                 <span>09:00</span>
                 <span>10:30</span>
@@ -131,43 +197,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section class="section app-about" aria-labelledby="app-about-title">
-      <div class="container app-intro-grid">
-        <div>
-          <p class="eyebrow">
-            <span aria-hidden="true"></span>
-            Conheça o aplicativo
-          </p>
-          <h2 id="app-about-title">
-            Mais organização para quem atende.
-            <em>Mais facilidade para quem agenda.</em>
-          </h2>
-        </div>
-
-        <div class="app-intro-text">
-          <p>
-            O HS Agenda é um sistema de agendamento online desenvolvido
-            para pequenos negócios e prestadores de serviços.
-          </p>
-          <p>
-            O proprietário organiza os serviços, preços, horários,
-            profissionais e clientes em um painel administrativo.
-          </p>
-          <p>
-            Cada negócio pode compartilhar um link público para que
-            seus clientes consultem os serviços disponíveis e realizem
-            agendamentos.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FUNCIONALIDADES -->
+    <!-- 2. FUNCIONALIDADES -->
     <section class="section app-features-section" aria-labelledby="features-title">
       <div class="container">
         <div class="app-section-heading">
@@ -175,32 +208,33 @@
             <span aria-hidden="true"></span>
             Funcionalidades
           </p>
+
           <h2 id="features-title">
-            Ferramentas para organizar seu atendimento.
+            Tudo para organizar seus atendimentos.
           </h2>
+
           <p>
-            Recursos para administrar o negócio e oferecer
-            uma experiência de agendamento mais prática.
+            Recursos essenciais para facilitar a rotina
+            de profissionais e pequenos negócios.
           </p>
         </div>
 
         <div class="app-features-grid">
-
           <article class="app-feature-card">
             <div class="app-feature-icon" aria-hidden="true">▦</div>
-            <h3>Agenda e horários</h3>
+            <h3>Agendamentos online</h3>
             <p>
-              Configure a disponibilidade por dia da semana,
-              incluindo vários períodos de atendimento.
+              Seus clientes escolhem serviços e horários
+              pelo link compartilhado pelo negócio.
             </p>
           </article>
 
           <article class="app-feature-card">
             <div class="app-feature-icon" aria-hidden="true">▤</div>
-            <h3>Catálogo de serviços</h3>
+            <h3>Serviços e horários</h3>
             <p>
-              Cadastre serviços com preços e durações personalizados
-              para cada tipo de atendimento.
+              Configure serviços, preços, duração
+              e períodos de atendimento.
             </p>
           </article>
 
@@ -208,8 +242,8 @@
             <div class="app-feature-icon" aria-hidden="true">♙</div>
             <h3>Clientes e profissionais</h3>
             <p>
-              Organize clientes e prestadores, com acesso
-              diferenciado para proprietário, colaborador e cliente.
+              Organize seus clientes e gerencie
+              os profissionais do estabelecimento.
             </p>
           </article>
 
@@ -217,155 +251,72 @@
             <div class="app-feature-icon" aria-hidden="true">◇</div>
             <h3>Pacotes de serviços</h3>
             <p>
-              Gerencie pacotes com quantidades, validade,
-              regras, solicitações e controle de utilização.
+              Cadastre pacotes, acompanhe solicitações
+              e controle os serviços utilizados.
             </p>
           </article>
-
-          <article class="app-feature-card">
-            <div class="app-feature-icon" aria-hidden="true">↗</div>
-            <h3>Link público</h3>
-            <p>
-              Compartilhe a página do seu negócio para que
-              os clientes consultem serviços e horários disponíveis.
-            </p>
-          </article>
-
-          <article class="app-feature-card">
-            <div class="app-feature-icon" aria-hidden="true">✓</div>
-            <h3>Gestão de agendamentos</h3>
-            <p>
-              Acompanhe os atendimentos, confirme agendamentos
-              e gerencie cancelamentos com registro de motivo.
-            </p>
-          </article>
-
         </div>
       </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
+    <!-- 3. COMO FUNCIONA -->
     <section class="section app-steps-section" aria-labelledby="steps-title">
       <div class="container">
-
         <div class="app-section-heading">
           <p class="eyebrow eyebrow-light">
             <span aria-hidden="true"></span>
-            Como funciona
+            Simples de começar
           </p>
-          <h2 id="steps-title">
-            Do cadastro ao atendimento.
-          </h2>
-          <p>
-            Um fluxo pensado para facilitar a organização
-            do negócio e o agendamento dos clientes.
-          </p>
+
+          <h2 id="steps-title">Como funciona?</h2>
+
+          <p>Três passos para organizar seus agendamentos.</p>
         </div>
 
         <ol class="app-steps-list">
           <li>
             <span class="app-step-number">01</span>
             <div>
-              <h3>Cadastre seu negócio</h3>
-              <p>Informe nome, foto, telefone, endereço e demais dados.</p>
+              <h3>Configure seu negócio</h3>
+              <p>Cadastre serviços, profissionais e horários.</p>
             </div>
           </li>
 
           <li>
             <span class="app-step-number">02</span>
             <div>
-              <h3>Configure seus serviços</h3>
-              <p>Defina preços, duração, profissionais e horários disponíveis.</p>
+              <h3>Compartilhe seu link</h3>
+              <p>Envie aos clientes o link de agendamento.</p>
             </div>
           </li>
 
           <li>
             <span class="app-step-number">03</span>
             <div>
-              <h3>Compartilhe seu link</h3>
-              <p>Envie o endereço público do negócio aos seus clientes.</p>
-            </div>
-          </li>
-
-          <li>
-            <span class="app-step-number">04</span>
-            <div>
-              <h3>Receba agendamentos</h3>
-              <p>Os clientes escolhem serviços, prestadores, datas e horários.</p>
-            </div>
-          </li>
-
-          <li>
-            <span class="app-step-number">05</span>
-            <div>
-              <h3>Administre os atendimentos</h3>
-              <p>Acompanhe a agenda, confirme horários e gerencie pacotes.</p>
+              <h3>Gerencie sua agenda</h3>
+              <p>Acompanhe e organize os atendimentos.</p>
             </div>
           </li>
         </ol>
-
       </div>
     </section>
 
-    <!-- PROPRIETÁRIOS E CLIENTES -->
-    <section class="section app-audiences-section" aria-labelledby="audiences-title">
-      <div class="container">
-        <div class="app-section-heading">
-          <p class="eyebrow">
-            <span aria-hidden="true"></span>
-            Uma solução conectada
-          </p>
-          <h2 id="audiences-title">
-            Para o negócio e para seus clientes.
-          </h2>
-        </div>
-
-        <div class="app-audiences-grid">
-          <article class="app-audience-card">
-            <h3>Para proprietários e profissionais</h3>
-            <p>
-              Um painel para organizar serviços, agenda,
-              clientes, prestadores, pacotes e solicitações.
-            </p>
-            <ul>
-              <li>Cadastro e configuração do negócio</li>
-              <li>Gestão de horários e profissionais</li>
-              <li>Controle de agendamentos</li>
-              <li>Administração de pacotes e pagamentos</li>
-            </ul>
-          </article>
-
-          <article class="app-audience-card">
-            <h3>Para os clientes</h3>
-            <p>
-              Uma página de agendamento acessada pelo
-              link compartilhado pelo estabelecimento.
-            </p>
-            <ul>
-              <li>Consulta de serviços e preços</li>
-              <li>Escolha de profissional e horário</li>
-              <li>Histórico e próximos agendamentos</li>
-              <li>Consulta e solicitação de pacotes</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACESSO -->
-    <section class="app-final-cta" aria-labelledby="app-cta-title">
+    <!-- 4. ACESSO -->
+    <section class="app-final-cta" aria-labelledby="cta-title">
       <div class="container app-final-cta-content">
         <div>
           <p class="eyebrow eyebrow-light">
             <span aria-hidden="true"></span>
-            Comece a organizar seus atendimentos
+            HS Agenda
           </p>
-          <h2 id="app-cta-title">
-            Conheça o HS Agenda.
+
+          <h2 id="cta-title">
+            Mais praticidade para seu negócio.
           </h2>
+
           <p>
-            Acesse o sistema para configurar seu negócio
-            e compartilhar seu link de agendamento.
+            Acesse o sistema e comece a organizar
+            seus serviços e agendamentos.
           </p>
         </div>
 
@@ -381,7 +332,7 @@
 
   </main>
 
-  <!-- RODAPÉ HS SOLUX -->
+  <!-- RODAPÉ -->
   <footer class="site-footer">
     <div class="container footer-main">
       <div class="footer-brand">
@@ -406,7 +357,10 @@
     </div>
 
     <div class="container footer-bottom">
-      <span>© <span id="year">2026</span> HS Solux. Todos os direitos reservados.</span>
+      <span>
+        © <span id="year">2026</span> HS Solux.
+        Todos os direitos reservados.
+      </span>
       <span>Feito para simplificar.</span>
     </div>
   </footer>
