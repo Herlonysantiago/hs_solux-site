@@ -1,0 +1,370 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HS Agenda | Agendamento Online | HS Solux</title>
+  <meta name="description" content="Conheça o HS Agenda, uma solução de agendamento online para profissionais e pequenos negócios.">
+  <meta name="theme-color" content="#0b2341">
+
+  <link rel="canonical" href="https://hssolux.com.br/aplicativos/hs-agenda/">
+  <link rel="icon" href="../../assets/hs-mark.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../app.css">
+
+  <style>
+    /* Ajustes específicos da página compacta */
+    .app-hero {
+      padding-top: 45px;
+      padding-bottom: 65px;
+    }
+
+    .app-back-link {
+      margin-bottom: 28px;
+    }
+
+    .app-hero-visual {
+      min-height: 340px;
+    }
+
+    .app-preview {
+      max-width: 370px;
+    }
+
+    .app-section-heading {
+      margin-bottom: 30px;
+    }
+
+    .app-features-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .app-feature-card {
+      padding: 26px;
+    }
+
+    .app-feature-icon {
+      margin-bottom: 17px;
+    }
+
+    .app-steps-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .app-steps-list li {
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .app-final-cta {
+      padding: 55px 0;
+    }
+
+    @media (max-width: 760px) {
+      .app-hero {
+        padding: 30px 0 55px;
+      }
+
+      .app-hero-visual {
+        min-height: auto;
+      }
+
+      .app-features-grid,
+      .app-steps-list {
+        grid-template-columns: 1fr;
+      }
+
+      .app-steps-list li {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../../#inicio" aria-label="HS Solux — página inicial">
+        <img src="../../assets/hs-mark.svg" alt="" class="brand-mark" width="44" height="44">
+        <span class="brand-name">HS <b>Solux</b></span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Abrir menu"
+        aria-controls="main-navigation"
+        aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="main-navigation" aria-label="Navegação principal">
+        <a href="../../#inicio">Início</a>
+        <a href="../../#solucoes">Soluções</a>
+        <a href="../../#metodo">Como trabalhamos</a>
+        <a href="../../#sobre">Sobre</a>
+        <a class="nav-cta" href="../../#contato">Vamos conversar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- 1. APRESENTAÇÃO -->
+    <section class="app-hero" aria-labelledby="app-title">
+      <div class="container app-hero-grid">
+        <div class="app-hero-content">
+          <a class="app-back-link" href="../../#solucoes">
+            <span aria-hidden="true">←</span>
+            Voltar aos aplicativos
+          </a>
+
+          <p class="eyebrow">
+            <span aria-hidden="true"></span>
+            Agendamento online
+          </p>
+
+          <h1 id="app-title">HS Agenda</h1>
+
+          <h2>
+            Sua agenda organizada.
+            <em>Seu atendimento simplificado.</em>
+          </h2>
+
+          <p class="app-hero-description">
+            Gerencie horários, serviços e clientes em um só lugar.
+            Compartilhe o link do seu negócio e facilite os
+            agendamentos online.
+          </p>
+
+          <div class="app-status-row">
+            <span class="app-status available">Disponível</span>
+            <span class="app-platform">Aplicativo web</span>
+          </div>
+
+          <div class="app-actions">
+            <a class="button button-primary"
+               href="https://hsagenda2.netlify.app/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Acessar HS Agenda
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <p class="app-access-note">
+            Os clientes agendam pelo link compartilhado
+            pelo estabelecimento.
+          </p>
+        </div>
+
+        <div class="app-hero-visual" aria-hidden="true">
+          <div class="app-preview">
+            <div class="app-preview-icon">▦</div>
+            <strong>HS Agenda</strong>
+            <span>Organize seus atendimentos</span>
+
+            <div class="app-preview-calendar">
+              <div class="preview-calendar-title">
+                <span>Agenda</span>
+                <span>Horários disponíveis</span>
+              </div>
+
+              <div class="preview-calendar-days">
+                <span>SEG</span>
+                <span>TER</span>
+                <span>QUA</span>
+                <span>QUI</span>
+                <span>SEX</span>
+              </div>
+
+              <div class="preview-calendar-slots">
+                <span>09:00</span>
+                <span>10:30</span>
+                <span>14:00</span>
+                <span>16:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FUNCIONALIDADES -->
+    <section class="section app-features-section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="app-section-heading">
+          <p class="eyebrow">
+            <span aria-hidden="true"></span>
+            Funcionalidades
+          </p>
+
+          <h2 id="features-title">
+            Tudo para organizar seus atendimentos.
+          </h2>
+
+          <p>
+            Recursos essenciais para facilitar a rotina
+            de profissionais e pequenos negócios.
+          </p>
+        </div>
+
+        <div class="app-features-grid">
+          <article class="app-feature-card">
+            <div class="app-feature-icon" aria-hidden="true">▦</div>
+            <h3>Agendamentos online</h3>
+            <p>
+              Seus clientes escolhem serviços e horários
+              pelo link compartilhado pelo negócio.
+            </p>
+          </article>
+
+          <article class="app-feature-card">
+            <div class="app-feature-icon" aria-hidden="true">▤</div>
+            <h3>Serviços e horários</h3>
+            <p>
+              Configure serviços, preços, duração
+              e períodos de atendimento.
+            </p>
+          </article>
+
+          <article class="app-feature-card">
+            <div class="app-feature-icon" aria-hidden="true">♙</div>
+            <h3>Clientes e profissionais</h3>
+            <p>
+              Organize seus clientes e gerencie
+              os profissionais do estabelecimento.
+            </p>
+          </article>
+
+          <article class="app-feature-card">
+            <div class="app-feature-icon" aria-hidden="true">◇</div>
+            <h3>Pacotes de serviços</h3>
+            <p>
+              Cadastre pacotes, acompanhe solicitações
+              e controle os serviços utilizados.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMO FUNCIONA -->
+    <section class="section app-steps-section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="app-section-heading">
+          <p class="eyebrow eyebrow-light">
+            <span aria-hidden="true"></span>
+            Simples de começar
+          </p>
+
+          <h2 id="steps-title">Como funciona?</h2>
+
+          <p>Três passos para organizar seus agendamentos.</p>
+        </div>
+
+        <ol class="app-steps-list">
+          <li>
+            <span class="app-step-number">01</span>
+            <div>
+              <h3>Configure seu negócio</h3>
+              <p>Cadastre serviços, profissionais e horários.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="app-step-number">02</span>
+            <div>
+              <h3>Compartilhe seu link</h3>
+              <p>Envie aos clientes o link de agendamento.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="app-step-number">03</span>
+            <div>
+              <h3>Gerencie sua agenda</h3>
+              <p>Acompanhe e organize os atendimentos.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. ACESSO -->
+    <section class="app-final-cta" aria-labelledby="cta-title">
+      <div class="container app-final-cta-content">
+        <div>
+          <p class="eyebrow eyebrow-light">
+            <span aria-hidden="true"></span>
+            HS Agenda
+          </p>
+
+          <h2 id="cta-title">
+            Mais praticidade para seu negócio.
+          </h2>
+
+          <p>
+            Acesse o sistema e comece a organizar
+            seus serviços e agendamentos.
+          </p>
+        </div>
+
+        <a class="button button-white"
+           href="https://hsagenda2.netlify.app/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Acessar HS Agenda
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="../../#inicio" aria-label="HS Solux — voltar ao início">
+          <img src="../../assets/hs-mark.svg" alt="" width="40" height="40">
+          <span class="brand-name">HS <b>Solux</b></span>
+        </a>
+        <p>Tecnologia para transformar ideias em soluções úteis.</p>
+      </div>
+
+      <div class="footer-col">
+        <strong>Navegação</strong>
+        <a href="../../#solucoes">Soluções</a>
+        <a href="../../#metodo">Como trabalhamos</a>
+        <a href="../../#sobre">Sobre</a>
+      </div>
+
+      <div class="footer-col">
+        <strong>Contato</strong>
+        <a href="mailto:hssolutions97@gmail.com">hssolutions97@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>
+        © <span id="year">2026</span> HS Solux.
+        Todos os direitos reservados.
+      </span>
+      <span>Feito para simplificar.</span>
+    </div>
+  </footer>
+
+  <script src="../../script.js" defer></script>
+</body>
+</html>
